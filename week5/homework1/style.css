@@ -1,0 +1,84 @@
+header{
+    background-color: rgb(188, 187, 187);
+    padding: 10px;
+}
+body{
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+.main_part {
+    background-color: bisque;
+    width: 70%;
+    height: 500px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+#m1{
+    width: 45%;
+    background-color: sandybrown;
+    padding: 10px;
+    margin-top: 350px;
+    margin-left: 10px;
+}
+#m2{
+    width: 45%;
+    background-color: sandybrown;
+    padding: 10px;
+    margin-top: 350px;
+    margin-right: 10px;
+}
+#m3{
+    display: flex;
+    justify-content: space-around;
+    background-color: sandybrown;
+    padding: 10px;
+    margin: 10px;
+}
+.aside_part{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color: rgb(104, 224, 156);
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(188, 187, 187);
+}
+.foot1{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+.foot2{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+.foot3{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+.foot4{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}

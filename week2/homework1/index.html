@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4313/4313394.png" type="image/png">
+    <title>Опросник</title>
+</head>
+<body>
+    <h1>Опросник для владельцев магических животных</h1>
+    <form method="post">
+        <div>
+            <label for="pet-name">Кличка питомца</label>
+            <input type="text" name="pet-name" id="pet-name" required/>
+        </div>
+            <div>
+                <label for="pet-type">Вид животного</label>
+                <select name="pet-type" id="pet-type" required>
+                    <option value="choosed">Выберите</option>
+                    <option value="dragon">Дракон</option>
+                    <option value="alicorn">Аликорн</option>
+                    <option value="unicorn">Единорог</option>
+                    <option value="pegasus">Пегас</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+            <div>
+                <label for="pet-food">Чем питается</label>
+                <select name="pet-food" id="pet-food">
+                    <option value="choosed">Выберите</option>
+                    <option value="wet-food">Влажный корм</option>
+                    <option value="dry-food">Сухой корм</option>
+                    <option value="natural-food">Натуральный корм</option>
+                </select>
+            </div>
+            <div>
+                <label for="sex">Пол</label>
+                <input type="radio" name="sex" id="female-sex" />
+                <label for="female-sex">Девочка</label>
+                <input type="radio" name="sex" id="male-sex" />
+                <label for="male-sex">Мальчик</label>
+            </div>
+                <div>
+                    <label for="owner-name">Имя владельца</label>
+                    <input type="text" name="owner-hame" id="owner-name" required/>
+                </div>
+                <div>
+                    <label for="owner-phone">Номер телефона владельца</label>
+                    <input type="tel" name="owner-phone" id="owner-phone" required />
+                </div>
+                <div>
+                    <label for="owner-mail">Электронная почта владельца</label>
+                    <input type="email" name="owner-mail" id="owner-mail" required />
+                </div>
+                <div>
+                    <textarea rows="10" name="owner-comments" id="owner-comments"></textarea>
+                </div>
+        <Button>Отправить</Button>
+        
+    
+    </form>
+
+</body>
+</html>
