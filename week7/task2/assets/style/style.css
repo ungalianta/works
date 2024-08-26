@@ -26,6 +26,7 @@ width: 100px;
     display: grid;
     grid-template-columns: repeat(5, 1fr)
 }
+
 .nav1{
     display: grid;
     font-family: 'WorkSans';
