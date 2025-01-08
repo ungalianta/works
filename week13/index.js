@@ -1,4 +1,5 @@
-document.getElementById('calculate').onclick = function(){
+document.getElementById('calculate').onclick = myFunction;
+function myFunction(){
     const inputBirthday = document.getElementById('birthday').value;
     const error = document.getElementById('error-message');
     const result = document.getElementById('result');
@@ -29,8 +30,13 @@ if (daysDiff % 10 === 1 && daysDiff % 100 !== 11) {
     dayWord = "дня";
 }
 
-result.textContent = `До вашего дня рождения осталось ${daysDiff} ${dayWord}.`;
+
+
+ result.textContent = `До вашего дня рождения осталось ${daysDiff} ${dayWord}.`
 };
+
+
+
 
     document.getElementById('birthday').oninput = function() {
     const errorMessage = document.getElementById('error-message');

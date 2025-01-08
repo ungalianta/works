@@ -28,3 +28,22 @@ button{
     border-radius: 4px;
 }
 
+
+function getDaysWord(count){
+    const div100 = Math.abs(calc) % 100;
+    const div10 = div100 % 10;
+
+    if (div100 > 10 && div100 < 20){
+        return "дней"
+    }
+    else if (div10 === 1) {
+        return "день";
+}
+else if (div10 >= 2 && div10 <= 4) {
+    return "дня";
+}
+else {
+    return "дней";
+}
+}
+ result.textContent = `До вашего дня рождения осталось ${daysDiff} ${count}.`
