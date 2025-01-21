@@ -1,5 +1,5 @@
-document.getElementById('calculate').onclick = myFunction;
-function myFunction(){
+document.getElementById('calculate').onclick = birthDate;
+function birthDate(){
     const inputBirthday = document.getElementById('birthday').value;
     const error = document.getElementById('error-message');
     const result = document.getElementById('result');
