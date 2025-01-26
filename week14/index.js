@@ -22,7 +22,7 @@ console.log('Количество студентов с положительно
 
 let negativeGrade = randomGrade.filter(grade => grade < 60);
 let negativeGradeCount = negativeGrade.length;
-console.log('Количество студентов с отрицательной оценкой (ниже 60):',positiveGradeCount);
+console.log('Количество студентов с отрицательной оценкой (ниже 60):',negativeGradetiveGradeCount);
 
 
 let letterGrade = randomGrade.map((grade) => {
