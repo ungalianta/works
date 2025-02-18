@@ -24,13 +24,13 @@
         });
 
         function validateForm() {
-            let isValid = true;
+            let valid = true;
             
             const name = document.getElementById('name');
             if (!name.checkValidity()) {
                 const errorMsg = name.validity.valueMissing ? 'Это поле обязательно для заполнения.' : 'Имя должно содержать только буквы и пробелы (2-20 символов).';
                 document.getElementById('nameError').textContent = errorMsg;
-                isValid = false;
+                valid = false;
             }
 
             
@@ -38,21 +38,21 @@
             if (!email.checkValidity()) {
                 const errorMsg = email.validity.valueMissing ? 'Это поле обязательно для заполнения.' : 'Введите корректный email.';
                 document.getElementById('emailError').textContent = errorMsg;
-                isValid = false;
+                valid = false;
             }
 
             
             const age = document.getElementById('age');
             if (!age.checkValidity()) {
                 document.getElementById('ageError').textContent = 'Это поле обязательно для заполнения.';
-                isValid = false;
+                valid = false;
             }
 
             
             const profession = document.getElementById('profession');
             if (!profession.checkValidity()) {
                 document.getElementById('professionError').textContent = 'Выберите профессию.';
-                isValid = false;
+                valid = false;
             }
 
             
@@ -60,18 +60,18 @@
             if (!password.checkValidity()) {
                 const errorMsg = password.validity.valueMissing ? 'Это поле обязательно для заполнения.' : 'Пароль должен содержать как минимум 8 символов, 1 заглавную букву и 1 цифру.';
                 document.getElementById('passwordError').textContent = errorMsg;
-                isValid = false;
+                valid = false;
             }
 
         
             const consent = document.getElementById('consent');
             if (!consent.checked) {
                 document.getElementById('consentError').textContent = 'Вы должны согласиться на обработку данных.';
-                isValid = false;
+                valid = false;
             }
 
         
-            submitButton.disabled = !isValid;
+            submitButton.disabled = !valid;
         }
 
         
