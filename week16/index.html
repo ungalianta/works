@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Регистрация пользователя</title>
+    
+</head>
+<body>
+    <div class="form-container">
+        <h1>Регистрация</h1>
+        <form id="registrationForm">
+            <label for="name">Имя <span>*</span></label>
+            <input type="text" id="name" placeholder="Введите ваше имя" required pattern="[A-Za-zА-Яа-яЁё\s]{2,20}">
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Электронная почта <span>*</span></label>
+            <input type="email" id="email" placeholder="Введите ваш email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="age">Возраст <span>*</span></label>
+            <input type="number" id="age" placeholder="Введите ваш возраст" required>
+            <span class="error" id="ageError"></span>
+
+            <label>Пол</label>
+            <label><input type="radio" name="gender" value="male" required> Мужчина</label>
+            <label><input type="radio" name="gender" value="female"> Женщина</label>
+
+            <label for="profession">Профессия <span>*</span></label>
+            <select id="profession" required>
+                <option value="" disabled selected>-- Выберите профессию --</option>
+                <option value="врач">Врач</option>
+                <option value="программист">Программист</option>
+                <option value="учитель">Учитель</option>
+                <option value="дизайнер">Дизайнер</option>
+                <option value="инженер">Инженер</option>
+                <option value="продавец">Продавец</option>
+                <option value="другое">Другое</option>
+            </select>
+            <span class="error" id="professionError"></span>
+
+            <label for="password">Пароль <span>*</span></label>
+            <input type="password" id="password" placeholder="Введите ваш пароль" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <span class="error" id="passwordError"></span>
+
+            <div class="checkbox-container">
+                <label><input type="checkbox" id="consent" required> Я согласен на обработку данных</label>
+                <span class="error" id="consentError"></span>
+            </div>
+
+            <button type="submit" id="submitButton" disabled>Отправить</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
