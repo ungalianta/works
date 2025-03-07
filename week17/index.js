@@ -1,7 +1,9 @@
 
 class Transport {
     constructor(type, price, brand) {
-    this.type = type;  
+    this.type = type;
+    this.brand = brand;
+    this.price = price;  
     }
   
     getInfo() {
@@ -27,8 +29,8 @@ class Car extends Transport {
   
 class Bike extends Transport {
     constructor(price, brand, maxSpeed) {
-      super('мотоцикл', price, brand); 
-      this.maxSpeed = maxSpeed; 
+    super('мотоцикл', price, brand); 
+    this.maxSpeed = maxSpeed; 
     }
   
     getMaxSpeed() {

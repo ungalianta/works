@@ -1,0 +1,40 @@
+.container{
+max-width: 600px;
+padding: 100px;
+padding-left: 200px;
+}
+
+
+.input{
+    height: 30px;
+    border-color: rgb(4, 125, 246);
+    caret-color: orangered;
+    border-radius: 10px;
+}
+.addBtn{
+height: 30px;
+width: 100px;
+margin-left: 20px;
+border-radius: 5px;
+background-color: rgb(240, 67, 4);
+border: none;
+}
+
+h1{
+    font-size: 25px;
+}
+
+h2{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.clearBtn{
+    height: 30px;
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: rgb(240, 67, 4);
+    border: none; 
+    font-weight: bold;
+}
